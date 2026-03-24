@@ -1,0 +1,21 @@
+{
+    "compilerOptions": {
+        "module": "ESNext",
+        "target": "ES2020",
+        "moduleResolution": "node",
+        "allowSyntheticDefaultImports": true,
+        "esModuleInterop": true,
+        "allowJs": true,
+        "checkJs": false,
+        "skipLibCheck": true,
+        "lib": ["ES2020"],
+        "types": ["node", "@wdio/globals"]
+    },
+    "include": [
+        "test/**/*",
+        "wdio.conf.js"
+    ],
+    "exclude": [
+        "node_modules"
+    ]
+}

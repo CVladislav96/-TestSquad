@@ -1,0 +1,38 @@
+BUG-001: Repository search does not work if there are spaces around the “/” character
+
+Title: 
+    Searching a repository using the “username/name” format with spaces returns no results
+Project: 
+    GitHub Web
+Component: 
+    Search
+Prerequisites:
+    The user is not logged in (or is logged in—it doesn’t matter). The github.com homepage is open. There is a public repository named CVladislav96/HomeLibrary.
+
+Steps to reproduce:
+    1. Enter the following in the search bar: CVladislav96 / HomeLibrary (with spaces before and after the slash).
+    2. Press Enter.
+    3. In the search results, select the “Repositories” tab.
+	
+
+Actual result:
+    No results found. The message “We couldn't find any repositories matching” appears.
+
+Expected result:
+    The CVladislav96/HomeLibrary repository should be found. The search should ignore extra spaces around the “/” character and treat the query as a search for a specific repository.
+
+Environment:
+    • Browser: Google Chrome 120.0.6099.130
+    • OS: Windows 11
+    • Device: Desktop
+
+Severity:
+    Minor (minor) — the feature works when entered correctly; the error occurs only with non-standard formatting
+
+Priority:
+    Low (low) — can be fixed in the next release
+
+Screenshot: 
+    ./C51.png
+
+
